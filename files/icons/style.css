@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+#init{
+    background: url(../icons/bigplay.png) no-repeat 50% 50% rgba(0, 0, 0, 0.72) !important;
+    cursor:pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding: 2px 20px;
+}
+h2{
+    padding: 0 20px;
+}
+h3{
+}
+
+.barLessons{
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    background: #2a76e6;
+    color: #fff;
+    -webkit-box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);
+}
+
+.color_word{    background: #2567c7;}
+.color_excel{   background: #158c00;}
+.color_excelAva{ background: #17963f;}
+.color_prezi{   background: #192b46;}
+.color_photo{  background: #004458;}
+.color_power{  background: #b7472a;}
+.color_internet{  background:#1fb3cc;}
+.color_win{  background:#0170c7;}
+
+.unidCurso.word{ background: #2499ff;}
+.unidCurso.excel{ background: #158c00;}
+.unidCurso.excelAva{ background:  #17963f;}
+.unidCurso.prezi{   background: #3181ff;}
+.unidCurso.photo{   background: #004458;}
+.unidCurso.internet{   background: #1fb3cc;}
+.unidCurso.power{   background: #b7472a;}
+.unidCurso.win{   background: #0170c7;}
+
+
+/*--- iconos lecciones ---*/
+.iconClass{
+	display: inline-block;
+    height: 30px;
+    width: 35px;
+    margin: 2px;
+    color: #fff;
+}
+.iconClass.excel{
+    background: url(../icons/excel.svg) no-repeat 5px;
+    background-size: 25px;
+}
+
+.iconClass.word{
+    background: url(../icons/word.svg) no-repeat 5px;
+    background-size: 25px;
+}
+
+.iconClass.prezi{
+    background: url(../icons/logoPrezi.svg) no-repeat 5px;
+    background-size: 25px;
+}
+.iconClass.photo{
+    background: url(../icons/logoPhotoshop.svg) no-repeat 5px;
+    background-size: 25px;
+}
+.iconClass.internet{
+    background: url(../icons/logoInternet.svg) no-repeat 5px;
+    background-size: 25px;
+}
+.iconClass.power{
+    background: url(../icons/logoPower.svg) no-repeat 5px;
+    background-size: 25px;
+}
+.iconClass.win{
+    background: url(../icons/logoWindows.svg) no-repeat 5px;
+    background-size: 25px;
+}
+
+
+/*-----*/
+.title{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menuLessons{
+    height: 35px;
+    padding: 0 25px 0 20px;
+    float: left;
+    color: #fff;
+    background: #3180ff;
+}
+.menuLessons a{
+    text-decoration: none;
+}
+.menu{
+    display: inline-block;
+    width: 35px;
+    padding: 5px 0;
+}
+.textMenu{
+    height: 40px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.lineMenu{
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 4px;
+    transform-origin: top left;
+    -webkit-transition: all 1000ms ease-in-out !important;
+    transition: all 1000ms ease-in-out !important;
+}
+.x{
+    color: #fff;
+    font-size: 29px;
+    margin-top: -6px;
+    margin-left: 8px;
+    font-weight: 600;
+    display: none;
+    transform-origin: top left;
+    -webkit-transition: all 1000ms ease-in-out !important;
+    transition: all 1000ms ease-in-out !important;
+}
+.nameLesson{
+    float: left;
+    padding-left: 15px;
+}
+.barMenu{
+position: absolute;
+    z-index: 99999999;
+    background: #f6f7fb;
+    min-height: 500px;
+    width: 280px;
+    -webkit-box-shadow: 0px 6px 8px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 6px 8px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 6px 8px 3px rgba(0,0,0,0.3);
+    height: calc(100% - 34px);
+}
+
+.contVertical{
+    overflow-y: scroll;
+    height: calc(100% - 97px);
+    border-right: 2px solid rgba(255, 255, 255, 0);
+    padding-right: 2px;
+}
+
+.barMenu h4{
+    padding: 10px 15px;
+    margin: 0;
+    background: #2499ff;
+    color: #fff;
+    font-size: 14px;
+}
+.barMenu ul{
+    padding: 5px 0;
+    margin: 0 12px;
+}
+.barMenu li span{
+    margin-right: 8px;
+}
+.barMenu li a{
+    text-decoration: none;
+    color: #000;
+    padding: 7px 3px;
+    display: block;
+}
+.barMenu li{
+    border-bottom: 1px solid #dcdcdc;
+        padding: 0;
+}
+.barMenu li:hover{
+    background: #dcdcdc;
+}
+.barMenu li:last-child{
+    border: none;
+}
+.unidCurso{
+    padding: 15px;
+    color: #fff;
+}
+
+
+
+
+.unidCurso span{
+    display:block;
+}
+.unidCurso .title{
+        font-size: 20px;
+    font-weight: 600;
+}
+.unidCurso .subtitle{
+    font-size: 16px;
+}
+.barMenu.movLeft{
+    left: -280px;
+     transform-origin: top left;
+          -webkit-transition: all 200ms ease-in-out !important;
+          transition: all 200ms ease-in-out !important;
+
+}
+.barMenu.movRight{
+   left:0;
+    transform-origin: top left;
+    -webkit-transition: all 200ms ease-in-out !important;
+    transition: all 200ms ease-in-out !important;
+
+}
+
+
+.tiempos{
+    position: absolute;
+    z-index: 9999;
+    background: #01ff15;
+    top: 0;
+    color: #000000;
+    left: 0;
+    min-width: 150px;
+}
+
+
+.arrows{
+    height: 34px;
+    padding: 0 10px;
+    float: right;
+    text-align: center;
+}
+.arrows a{
+    display: inline-block;
+    width: 40px;
+}
+.arrows a:hover{
+    background: #3180ff;
+
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid white;
+  display: inline-block;
+  margin: 7px 10px;
+  vertical-align: top;
+
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid white;
+    display: inline-block;
+    margin: 7px 10px;
+    vertical-align: top;
+}
+
+.home a{
+background: url(../icons/home.svg) 8px 5px no-repeat;
+    display: block;
+    height: 35px;
+    width: 70px;
+    padding: 0 15px;
+    color: #fff;
+    background-size: 23px;
+    text-align: right;
+    line-height: 29px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 0;
+    line-height: 38px;
+}
+.home a:hover{
+        background: #3180ff url(../icons/home.svg) 8px 5px no-repeat;
+    background-size: 23px;
+
+    
+
+}
+.home{
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+}
+
+
+/*----------- BOTON ----------*/
+/*  boton */
+.btnClic{
+    clear: both;
+    height: 53px;
+    width: 53px;
+    display: none;
+    color: white;
+    position: absolute;
+    z-index: 999;
+    z-index: 9999999; 
+    margin: 0;
+    padding:0;
+        
+}
+
+.ecos{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #01ff15;
+    opacity: 0.5;
+    /*
+      -webkit-animation: sk-scaleout 0.8s infinite ease-in-out;
+  animation: sk-scaleout 0.8s infinite ease-in-out;
+      margin: 0;
+    padding:0;
+    */
+
+}
+         
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+
+
+@keyframes pulse {
+  0%,100% {
+    background-color: rgba(100,100,100,0);
+    border: 5px solid rgba(80,69,69,0);
+  }
+  50% {
+    background-color: #ff3232;
+    border: 5px solid rgb(80, 69, 69);
+  }
+}
+
+.show{
+    display: block;
+}
+.step{
+    height: 5em;
+    width: 10em;
+    background: red;
+    color: white;
+    position: absolute;
+    z-index: 999;
+}
+.wrapper{
+    height: 100vh;
+}
+
+
+
+/*-----------------------*/
+/*- POSICION DE LOS BOTONES  -*/
+.b_1, .b_2, .b_3, .b_4, .b_5, .b_6, .b_7, .b_8, .b_9, .b_10,
+.b_11, .b_12, .b_13, .b_14, .b_15, .b_16, .b_17, .b_18, .b_19, .b_20, 
+.b_21, .b_22, .b_23, .b_24, .b_25, .b_26, .b_27, .b_28, .b_29, .b_30,
+.b_31, .b_32, .b_33, .b_34, .b_35, .b_36, .b_37, .b_38, .b_39, .b_40,
+.b_41, .b_42, .b_43, .b_44, .b_45, .b_46, .b_47, .b_48, .b_49, .b_50{
+    display: block;
+}
+
+/*-----------------------*/
+
+
+
+/* video css */
+
+
+
+body:-webkit-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    background-color: #f00;
+}
+
+body:-moz-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+body:-ms-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+body:-o-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+body:full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+
+
+
+/*------------------- scroll bar ------------*/
+/*---- FIN DE ESTILOS RESPONSIVE ----*/
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.23);
+background-color: #F5F5F5;
+border-radius: 10px;
+margin: 5px 0;
+ }
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+width: 9px;
+background-color: #F5F5F5; }
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-image: -webkit-linear-gradient(330deg, #f6d365 0%, #ffb7a3 100%);
+background-image: linear-gradient(120deg, #ffcd8e 0%, #ffaf98 100%);
+}
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb:hover {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-image: -webkit-linear-gradient(330deg, #fdaf4c 0%, #f17551 100%);
+background-image: linear-gradient(120deg, #fdaf4c 0%, #f17551 100%); 
+}
+
+
+.square::-webkit-scrollbar-track {
+border-radius: 0 !important; }
+
+.square::-webkit-scrollbar-thumb {
+border-radius: 0 !important; }
+
+.thin::-webkit-scrollbar {
+width: 6px; }
+
+
+
+@media screen and (mAx-width: 1360px) {
+
+
+.barLessons {
+    height: 30px;
+    line-height: 30px;
+}
+
+.contenedor {
+    height: calc(100vh - 30px);
+}
+
+
+.home {
+    height: 30px;
+}
+
+.home a {
+    background: url(../icons/home.svg) 8px 3px no-repeat;
+    height: 30px;
+    background-size: 23px;
+    line-height: 33px;
+}
+.home a:hover {
+     background: #3180ff url(../icons/home.svg) 8px 3px no-repeat;
+    height: 30px;
+    background-size: 23px;
+    line-height: 33px;
+}
+
+.arrow-left, .arrow-right {
+
+    margin: 5px 10px;
+}
+
+.menu {
+    padding: 2px 0;
+}
+.x{
+    margin-top: -2px;
+}
+
+
+/*--- iconos lecciones ---*/
+.iconClass{
+
+    margin: 0px;
+}
+.iconClass.excel{
+    background: url(../icons/excel.svg) no-repeat 5px;
+    background-size: 22px;
+}
+
+.iconClass.word{
+    background: url(../icons/word.svg) no-repeat 5px;
+    background-size: 22px;
+}
+
+.iconClass.prezi{
+    background: url(../icons/logoPrezi.svg) no-repeat 5px;
+    background-size: 22px;
+}
+.iconClass.photo{
+    background: url(../icons/logoPhotoshop.svg) no-repeat 5px;
+    background-size: 22px;
+}
+.iconClass.internet{
+    background: url(../icons/logoInternet.svg) no-repeat 5px;
+    background-size: 22px;
+}
+.iconClass.power{
+    background: url(../icons/logoPower.svg) no-repeat 5px;
+    background-size: 22px;
+}
+.iconClass.win{
+    background: url(../icons/logoWindows.svg) no-repeat 5px;
+    background-size: 22px;
+}
+
+    
+
+}
