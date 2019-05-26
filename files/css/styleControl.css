@@ -1,0 +1,151 @@
+/* Tested on Chrome, Firefox, and Opera. */
+
+/* BASE STYLES
+------------------------------------------------------- */
+
+button {
+	border: none;
+	background: none;
+	outline: none;
+}
+
+/* LAYOUT
+------------------------------------------------------- */
+
+#wrapper {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#videoContainer {        
+	position: relative;
+	height: 50%;
+	height: 50%;
+}
+
+#video {
+	width: 100%;
+}
+
+#transcript p {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 18px;
+	line-height: 36px;
+	margin: 20px;
+}
+
+.highlight {
+	color: #ff9900;
+}
+
+/* VIDEO CONTROLS
+------------------------------------------------------- */
+
+#videoControls {
+	position: relative;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(41, 41, 41);	
+    height: 62px;
+}
+#play{
+	margin-right:5px;
+}
+
+#progress {
+	width: 0%;
+    position: absolute;
+    top: -2px;
+    -webkit-appearance: none;
+    background-color: #fc051f;
+    height: 12px;
+    z-index: 1;
+    pointer-events: none;		
+}
+
+#progressBar {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: -2px;
+    -webkit-appearance: none;
+    background-color: #8c8c8c;
+    height: 12px;
+    z-index: 0;
+    padding: 0;
+}
+#progressBar:focus {
+  	outline: none; 
+}
+#progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    height: 0;
+    width: 0;
+}
+#progressBar::-moz-range-thumb {
+	visibility: hidden !important ;
+}
+
+#buttons {
+	opacity: 0; 
+	transition: opacity .3s ease-out;
+}
+#buttonControls{
+    padding: 17px 15px 5px 15px;
+    height: 40px;
+}
+#videoContainer:hover #buttons {
+	opacity: 1.0;
+} 
+
+#duration, #fastFwd {
+color: white;
+    font-size: 23px;
+    position: relative;
+    left: 15px;
+    height: 40px;
+    display: inline-block;
+    top: 0;
+    vertical-align: top;
+    line-height: 45px;
+}
+
+#mute, #closedCaption, #fullScreen, #volumeBar {
+	float: right;
+    margin-right: 10px;
+}
+
+#volumeSlider {
+    width: 110px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+#volumeSlider::-webkit-slider-thumb {
+    background-color: green;
+    height: 10px;
+    width: 10px;
+}
+
+/* =========================================
+   MEDIA QUERIES */
+
+
+@media screen and (max-width: 1024px) {
+
+	#wrapper {
+		width:  80%;
+	}
+
+	#transcript p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	/*#videoControls {
+		top: 85%;
+	}*/
+
+}
