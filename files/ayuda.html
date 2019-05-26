@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plataforma Interactiva de Capacitación OIC</title>
+	
+	<link rel="stylesheet" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="css/styleCover.css">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+	<meta name="viewport" content="width=device-width"/>
+
+	<link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
+
+</head>
+
+<body class="body">
+
+<!--- fondo ---->
+<div class="bg"></div>
+<!--<div class="target"><a><img src="files/icons/logo_oic_white.svg" width="200""><span>Comenzar</span></a></div>-->
+
+<!---- Encabezado ------>
+
+<div class="header">
+	<div class="menuLessons">
+		<a href="#">
+			<span class="menu">
+				<span class="lineMenu"></span>
+				<span class="lineMenu"></span>
+				<span class="lineMenu"></span>
+				<span class="x">X</span>
+			</span>
+			<Span class="textMenu">Menú	</Span>
+		</a>
+	</div>	
+	<span class="home"><a href="../inicio.html">Home</a></span>
+	<span class="online"><a href="https://oiclabs.com/" target="_blank">Plataforma Online</a></span>
+	<button class="btn btn-primary videoInduccion" onClick="playInduccion();">Video inducción</button>
+	<div class="contLogo">
+		<img src="icons/logo_oic_white.svg" width="200"">
+	</div>	
+</div>
+
+
+<!-- Barra de Menú -->
+<div class="barMenu movLeft">
+	<ul class="">
+		<li><a class="" href="../inicio.html">Cursos</a></li>
+		<li>
+			<ul>
+				<li><a  href="word.html">Word</a></li>
+				<li><a  href="excel.html">Excel</a></li>
+				<li><a  href="excelAvanzado.html">Excel Avanzado</a></li>
+				<li><a  href="powerpoint.html">Power Point</a></li>
+				<li><a  href="internet.html">Internet y Redes Sociales</a></li>
+				<li><a  href="windows.html">Windows 10</a></li>
+				<li><a  href="photoshop.html">Photoshop CC</a></li>
+				<li><a  href="coreldraw.html">CorelDRAW</a></li>
+				<li><a  href="prezi.html">Prezi Next</a></li>
+			</ul>
+		</li>
+		<li><a class="" href="ayuda.html">Ayuda</a></li>
+		<li><a class="" href="https://oiclabs.com/" target="_blank">Evaluazión y certificación</a></li>
+		<li><a class="l" href="creditos.html">Contacto</a></li>
+	</ul>
+</div>
+
+<!-- Contenido -->
+
+<div class="container-fluid">
+	<div class="container cursos align-items-center">
+
+		<div class="row justify-content-center">
+
+			<!--- fila uno --->
+			<div class="row dos titulos_portada text-center">
+					<h1>Ayuda</h1>
+			</div>
+
+			<!--- fila dos --->
+			<div class="row dos align-items-center">
+				<div class="col col-lg-12">
+					<h4>Navegadores Web</h4>
+					<p>Para visualizar y ver las lecciones sin problema, se recomienda trabajar y actualizar los navegadores Google Chrome y Mozilla Firefox. 
+A continuación, encontrará los links para descargarlos desde sus páginas oficiales. Recuerde que debe de estar conectado a internet para poder hacerlo.</p>
+
+				</div>
+				<div class="col col-lg-2">
+					<a class="btn btnAyuda" href="https://www.google.com/chrome/" target="_blank"><img src="icons/chrome-logo.svg" width="120"><div>Descargar</div></a>
+
+				</div>
+				<div class="col col-lg-2">
+					<a class="btn btnAyuda" href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank"><img src="icons/logoFire.png" width="110"><div>Descargar</div></a>
+				</div>
+
+			</div>
+
+						<!--- fila res --->
+			<div class="row dos align-items-center">
+				<div class="col col-lg-12">
+					<h4>Plataforma Online</h4>
+					<p>La plataforma Online, le permitirá ingresar a los cursos desde cualquier lugar y dispositivo conectado a internet.</p>
+
+				</div>
+				<div class="col col-lg-3">
+					<a class="btn btnAyuda" href="https://oiclabs.com/campus/" target="_blank">Campus Virtual OIC</a>
+
+				</div>
+
+			</div>
+
+
+			<div class="ind">
+				<span class="pulseF11">Pulse la tecla <span class="keyF11">F11</span> para entrar y salir del modo Pantalla completa en los navegadores Chrome y Firefox.</span><br />
+				<span class="pulseF11">Pulse las teclas: Shift + Windows + Enter al a vez, para entrar y salir del modo Pantalla completa en el navegador Microsoft Edge.</span>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+
+<!---- MODAL INDUCCION----->
+<div class="modal fade" id="modInduccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <video width="100%" height="" controls id='videoInduccion' autoplay muted="muted"  >
+		  <source src="icons/induccion.mp4" type="video/mp4">
+		  <source src="icons/induccion.ogg" type="video/ogg">
+		  Your browser does not support the video tag.
+		</video>
+      </div>
+      <button type="button" class="closeIntro btn btn-danger" data-dismiss="modal">X</button>
+      <div class="modal-footer">
+        <!-- <button type="button"  onClick="go_full_screen();" class="btn btn-primary">Ver er pantalla completa</button>-->
+        <!--<button type="button" class="playIntro btn btn-danger" onClick="playIntro();"><img src="files/icons/play-icon.png" height="20px" alt="The play icon">Reproducir intro</button>-->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!----- FOOTER    ---------->
+<div class="footer">
+		Tarjeta inteligente de capacitación -  Producido por: OIC Capacitaciones  │  <a href="https://oiclabs.com/" target="_blank">www.oiclabs.com</a>
+</div>
+
+
+
+</div> <!-- CIERRA CONTAINER --->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/menu.js"></script> 
+
+<script type="text/javascript">
+
+	/*** video induccion   */
+var vidIn = document.getElementById("videoInduccion"); 
+
+function playInduccion() {
+
+        $('#modInduccion').modal('show');
+        vidIn.load();
+        vidIn.play();
+        vidIn.muted = false;
+}
+$('#modInduccion').on('hidden.bs.modal', function() {
+    vidIn.pause();
+
+})
+
+//Cierra el modal al finalizar el video
+$(document).ready(function(){
+	$("#videoInduccion").on('ended', function(){
+		$('#modInduccion').modal('hide');
+		vidIn.pause();
+	});
+});
+
+
+</script>
+
+</body>
+</html>

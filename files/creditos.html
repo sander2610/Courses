@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plataforma Interactiva de Capacitación OIC</title>
+	
+	<link rel="stylesheet" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="css/styleCover.css">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+	<meta name="viewport" content="width=device-width"/>
+
+	<link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
+
+</head>
+
+<body class="body">
+
+<!--- fondo ---->
+<div class="bg"></div>
+<!--<div class="target"><a><img src="files/icons/logo_oic_white.svg" width="200""><span>Comenzar</span></a></div>-->
+
+<!---- Encabezado ------>
+
+<div class="header">
+	<div class="menuLessons">
+		<a href="#">
+			<span class="menu">
+				<span class="lineMenu"></span>
+				<span class="lineMenu"></span>
+				<span class="lineMenu"></span>
+				<span class="x">X</span>
+			</span>
+			<Span class="textMenu">Menú	</Span>
+		</a>
+	</div>	
+	<span class="home"><a href="../inicio.html">Home</a></span>
+	<span class="online"><a href="https://oiclabs.com/" target="_blank">Plataforma Online</a></span>
+	<button class="btn btn-primary videoInduccion" onClick="playInduccion();">Video inducción</button>
+	<div class="contLogo">
+		<img src="icons/logo_oic_white.svg" width="200"">
+	</div>	
+</div>
+
+
+<!-- Barra de Menú -->
+<div class="barMenu movLeft">
+	<ul class="">
+		<li><a class="" href="../inicio.html">Cursos</a></li>
+		<li>
+			<ul>
+				<li><a  href="word.html">Word</a></li>
+				<li><a  href="excel.html">Excel</a></li>
+				<li><a  href="excelAvanzado.html">Excel Avanzado</a></li>
+				<li><a  href="powerpoint.html">Power Point</a></li>
+				<li><a  href="internet.html">Internet y Redes Sociales</a></li>
+				<li><a  href="windows.html">Windows 10</a></li>
+				<li><a  href="photoshop.html">Photoshop CC</a></li>
+				<li><a  href="coreldraw.html">CorelDRAW</a></li>
+				<li><a  href="prezi.html">Prezi Next</a></li>
+			</ul>
+		</li>
+		<li><a class="" href="ayuda.html">Ayuda</a></li>
+		<li><a class="" href="https://oiclabs.com/" target="_blank">Evaluazión y certificación</a></li>
+		<li><a class="l" href="creditos.html">Contacto</a></li>
+	</ul>
+</div>
+
+<!-- Contenido -->
+
+<div class="container-fluid">
+	<div class="container cursos align-items-center">
+
+		<div class="row justify-content-center">
+
+			<!--- fila uno --->
+			<div class="row dos titulos_portada text-center">
+					<h1>Contacto</h1>
+			</div>
+
+			<!--- fila dos --->
+
+			<div class="row dos align-items-center">
+				<div class="col col-lg-12">
+					<p>
+						Nuestra organización con 13 años de experiencia, cuenta con un selecto grupo de profesionales, comprometidos con el crecimiento y enriquecimiento del ser humano a través de metodologías de capacitación, al alcance de todos. Enfocados en constantes investigaciones para apoyar a empresarios, empleados, instituciones educativas, docentes y padres de familia; con el fin de que cuenten con las herramientas y el conocimiento que les permita cumplir con su misión de ser formadores y gestores de los líderes del siglo XXI.
+					</p>
+
+				</div>
+
+			</div>
+
+
+			<div class="row dos align-items-center">
+				<div class="col col-lg-12">
+					<h4>Colombia</h4>
+					<p>
+						<strong>Dirección:</strong> Calle 129 N°47-25 Piso 3
+						<br />
+						<strong>PBX:</strong> 031 6334162 
+					</p>
+					<h4>República Dominicana</h4>
+					<p>
+						<strong>Dirección:</strong> Calle Marginal Norte (INVI) Oficina Nº 54 piso 2, Kilómetro 10 de la Independencia
+						<br />
+						<strong>Teléfono:</strong> 829 545-4207
+					</p>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+</div>
+
+
+
+<!---- MODAL INDUCCION----->
+<div class="modal fade" id="modInduccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <video width="100%" height="" controls id='videoInduccion' autoplay muted="muted"  >
+		  <source src="icons/induccion.mp4" type="video/mp4">
+		  <source src="icons/induccion.ogg" type="video/ogg">
+		  Your browser does not support the video tag.
+		</video>
+      </div>
+      <button type="button" class="closeIntro btn btn-danger" data-dismiss="modal">X</button>
+      <div class="modal-footer">
+        <!-- <button type="button"  onClick="go_full_screen();" class="btn btn-primary">Ver er pantalla completa</button>-->
+        <!--<button type="button" class="playIntro btn btn-danger" onClick="playIntro();"><img src="files/icons/play-icon.png" height="20px" alt="The play icon">Reproducir intro</button>-->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!----- FOOTER    ---------->
+<div class="footer">
+		Tarjeta inteligente de capacitación -  Producido por: OIC Capacitaciones  │  <a href="https://oiclabs.com/" target="_blank">www.oiclabs.com</a>
+</div>
+
+
+
+</div> <!-- CIERRA CONTAINER --->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/menu.js"></script> 
+
+<script type="text/javascript">
+
+	/*** video induccion   */
+var vidIn = document.getElementById("videoInduccion"); 
+
+function playInduccion() {
+
+        $('#modInduccion').modal('show');
+        vidIn.load();
+        vidIn.play();
+        vidIn.muted = false;
+}
+$('#modInduccion').on('hidden.bs.modal', function() {
+    vidIn.pause();
+
+})
+
+//Cierra el modal al finalizar el video
+$(document).ready(function(){
+	$("#videoInduccion").on('ended', function(){
+		$('#modInduccion').modal('hide');
+		vidIn.pause();
+	});
+});
+
+
+</script>
+
+</body>
+</html>
